@@ -319,5 +319,27 @@ footer a:hover {
   padding-bottom: 0.5rem;
 }
 
+.bouton-catalogue {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.bouton-catalogue a {
+  background-color: #0af;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 5px #0af;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.bouton-catalogue a:hover {
+  background-color: #08f;
+  transform: scale(1.05);
+}
+
+
 
 
