@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panier - Fantasia</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="banniere-promo">
+    📣 Livraison gratuite dès 50 € d'achat !
+  </div>
+
+  <header>
+    <div class="logo">
+      <i class="fas fa-store icon"></i>
+      Fantasia
+    </div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="#"><i class="fas fa-search"></i></a>
+      <a href="panier.html" class="cart-link">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">3</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Votre Panier</h1>
+    <p class="sous-titre">Voici les articles que vous avez ajoutés :</p>
+
+    <section class="panier-liste">
+      <div class="produit">
+        <img src="images/produit1.jpg" alt="Produit 1">
+        <h2>Produit 1</h2>
+        <p class="prix">€14,99 EUR</p>
+        <button class="retirer-panier">Retirer</button>
+      </div>
+      <div class="produit">
+        <img src="images/produit2.jpg" alt="Produit 2">
+        <h2>Produit 2</h2>
+        <p class="prix">€19,99 EUR</p>
+        <button class="retirer-panier">Retirer</button>
+      </div>
+    </section>
+
+    <p class="total-panier">Total : €34,98 EUR</p>
+    <button class="valider-commande">Valider la commande</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Fantasia. Tous droits réservés.</p>
+    <p>Contact : <a href="mailto:contact@fantasia.com">contact@fantasia.com</a></p>
+  </footer>
+</body>
+</html>
