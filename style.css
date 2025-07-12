@@ -66,13 +66,15 @@ nav a:hover {
 
 .produit {
   background-color: #111;
-  padding: 20px;
-  border-radius: 12px;
+  padding: 12px;
+  border-radius: 10px;
   position: relative;
   text-align: center;
-  box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
   transition: transform 0.3s ease;
+  font-size: 13px;
 }
+
 
 .produit:hover {
   transform: scale(1.05);
