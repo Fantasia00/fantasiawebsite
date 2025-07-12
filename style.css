@@ -130,29 +130,37 @@ footer {
   border-top: 1px solid #222;
 }
 
-/* FAQ Section */
-.faq {
-  padding: 40px 20px;
-  border-top: 1px solid #222;
+/* Style modale */
+.modal {
+  display: none; /* cachée par défaut */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
 }
 
-.faq h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
+.modal-content {
+  background-color: #111;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 600px;
   color: #fff;
+  box-shadow: 0 0 20px #007bff;
 }
 
-.faq .question {
-  margin-bottom: 20px;
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.faq .question h3 {
-  font-size: 16px;
-  color: #00aaff;
-}
-
-.faq .question p {
-  font-size: 14px;
-  color: #ccc;
-  margin-top: 5px;
+.close:hover {
+  color: #fff;
 }
