@@ -252,4 +252,58 @@ footer a:hover {
   box-shadow: 0 0 10px #08f;
 }
 
+/* -------------------- PAGE PANIER -------------------- */
+.panier-liste {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.retirer-panier {
+  background-color: #f33;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.retirer-panier:hover {
+  background-color: #c00;
+  transform: scale(1.05);
+}
+
+.total-panier {
+  text-align: center;
+  color: #0af;
+  font-weight: bold;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.valider-commande {
+  display: block;
+  margin: 2rem auto;
+  background-color: #0af;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 5px #0af;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.valider-commande:hover {
+  background-color: #08f;
+  transform: scale(1.05);
+}
+
+
 
