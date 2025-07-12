@@ -59,9 +59,10 @@ nav a:hover {
 .grid-produits {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 20px;
   padding-bottom: 50px;
 }
+
 
 
 .produit {
