@@ -114,3 +114,18 @@ header nav a:hover {
   box-shadow: 0 0 10px #08f, 0 0 20px #08f;
   transform: scale(1.05);
 }
+
+header .logo {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #0af;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #0af;
+  transition: text-shadow 0.3s ease;
+}
+
+header .logo:hover {
+  text-shadow: 0 0 10px #08f, 0 0 20px #08f;
+}
+
