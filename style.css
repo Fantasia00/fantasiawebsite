@@ -1,0 +1,123 @@
+/* Reset & police */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  padding: 0 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #222;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+nav a {
+  color: #ccc;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.lang-currency {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.intro {
+  margin: 40px 0 20px;
+}
+
+.intro h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.grid-produits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  padding-bottom: 50px;
+}
+
+.produit {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 12px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.produit:hover {
+  transform: scale(1.05);
+}
+
+.produit img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.produit h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.produit .type {
+  font-size: 12px;
+  color: #888;
+  margin-top: 5px;
+}
+
+.produit .prix {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: -30px;
+  background: #007bff;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  transform: rotate(45deg);
+  padding: 5px 35px;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.6);
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  color: #555;
+  border-top: 1px solid #222;
+}
