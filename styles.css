@@ -1,5 +1,21 @@
 /* Style sombre et pro pour Fantasia */
 
+<script>
+  const searchInput = document.getElementById('searchInput');
+  searchInput.addEventListener('input', function() {
+    const query = this.value.toLowerCase();
+    const produits = document.querySelectorAll('.produit');
+    produits.forEach(produit => {
+      const titre = produit.querySelector('h2').textContent.toLowerCase();
+      if (titre.includes(query)) {
+        produit.style.display = '';
+      } else {
+        produit.style.display = 'none';
+      }
+    });
+  });
+</script>
+
 body {
   background-color: #000;
   color: #fff;
