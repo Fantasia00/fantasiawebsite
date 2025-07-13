@@ -108,6 +108,49 @@
     </section>
   </main>
 
+.barre-recherche {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.barre-recherche input {
+  width: 300px;
+  max-width: 80%;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #0af;
+  background-color: #111;
+  color: #fff;
+  font-size: 1rem;
+  box-shadow: 0 0 5px #0af;
+  transition: all 0.3s ease;
+}
+
+.barre-recherche input:focus {
+  outline: none;
+  border-color: #08f;
+  box-shadow: 0 0 10px #08f;
+}
+
+
+  <script>
+  const searchInput = document.getElementById('searchInput');
+  searchInput.addEventListener('input', function() {
+    const query = this.value.toLowerCase();
+    const produits = document.querySelectorAll('.produit');
+    produits.forEach(produit => {
+      const titre = produit.querySelector('h2').textContent.toLowerCase();
+      if (titre.includes(query)) {
+        produit.style.display = '';
+      } else {
+        produit.style.display = 'none';
+      }
+    });
+  });
+</script>
+
+
+
   <footer>
     <p>&copy; 2025 Fantasia. Tous droits réservés.</p>
     <p>Contact : <a href="mailto:contact@fantasia.com">contact@fantasia.com</a></p>
