@@ -60,7 +60,13 @@
   </div>
 </main>
 
-   <script>
+  <footer>
+  <div class="rotating-info" id="rotator">
+    📧 contact@tonsite.com
+  </div>
+</footer>
+
+<script>
   const rotator = document.getElementById('rotator');
   const items = [
     '📧 contact@tonsite.com',
@@ -69,6 +75,14 @@
   ];
 
   let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % items.length;
+    rotator.innerHTML = items[index];
+  }, 10000);
+</script>
+</body>
+</html>
 
   setInterval(() => {
     index = (index + 1) % items.length;
