@@ -60,14 +60,21 @@
   </div>
 </main>
 
-    <footer>
-  <div class="marquee">
-    <span>
-      📧 contact@tonsite.com &nbsp;&nbsp;&nbsp; 📞 +33 6 12 34 56 78 &nbsp;&nbsp;&nbsp;
-      <a href="contact.html">📬 Remplir le formulaire</a>
-    </span>
-  </div>
-</footer>
+   <script>
+  const rotator = document.getElementById('rotator');
+  const items = [
+    '📧 contact@tonsite.com',
+    '📞 +33 6 12 34 56 78',
+    '<a href="contact.html" style="color:#0af;text-decoration:underline;">📬 Remplir le formulaire</a>'
+  ];
+
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % items.length;
+    rotator.innerHTML = items[index];
+  }, 10000); // Change every 10 seconds
+</script>
 
   <footer>
     <p>&copy; 2025 Fantasia. Tous droits réservés.</p>
