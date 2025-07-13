@@ -370,5 +370,49 @@ footer a:hover {
 }
 
 
+.page-produit {
+  max-width: 900px;
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: #111;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #000;
+}
+
+.page-produit img {
+  flex: 1 1 300px;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.details-produit {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details-produit h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0af;
+  text-shadow: 0 0 5px #0af;
+}
+
+.details-produit .prix {
+  color: #0af;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.details-produit .description {
+  color: #ccc;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
 
 
