@@ -342,5 +342,32 @@ footer a:hover {
   transform: scale(1.05);
 }
 
+.boutons-categories {
+  text-align: center;
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.boutons-categories a {
+  background-color: #0af;
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 5px #0af;
+  transition: all 0.3s ease;
+}
+
+.boutons-categories a:hover {
+  background-color: #08f;
+  box-shadow: 0 0 10px #08f, 0 0 20px #08f;
+  transform: scale(1.05);
+}
+
+
 
 
